@@ -1,0 +1,113 @@
+/* TODO(you): Write the CSS to finish the assignment! */
+
+
+header h1{
+	font-family: 'Proxima Nova';
+}
+article h1{
+	font-family: 'Proxima Nova';
+}
+
+header div span:hover{
+	transition: 0.5s;
+	transform: rotate(330deg);
+}
+
+.choice-grid img{
+
+	width: 200px;
+	height: 200px;
+
+}
+
+.choice-grid{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.choice-grid div{
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	transition: 0.5s;
+	background-color: #f4f4f4;
+	width: 32.5%;
+}
+
+.choice-grid div img{
+	justify-content: center;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.choice-grid div:hover{
+	background-color: rgba(0,180,0,0.5);
+	transition: 0.5s;
+	transform: scale(1.2);
+	z-index: 1;
+}
+
+.resultBox{
+	width: 700px;
+	padding: 20px;
+	overflow: scroll;
+	justify-content: center;
+	margin : 0 auto;
+	margin-top: 40px;
+	margin-bottom: 20px
+}
+
+.resultBox h1{
+
+	text-align: center;
+	font-family: 'Proxima Nova'
+
+}
+
+.resultBox p{
+	margin-top: 18px;
+	margin-bottom: 18px;
+	text-align: justify;
+	font-family: 'Pangolin';
+}
+.resultBox button{
+	height: 50px;
+	background-color: #cecece;
+	width: 100%;
+}
+.resultBox button:hover{
+	background-color: #e0e0e0;
+}
+
+.question-name{
+	background-attachment: fixed;
+}
+
+
+@media screen and (max-width: 700px){
+	article{
+		width: 100vw;
+	}
+	article header div span {
+		display: none;
+	}
+	article {
+  		width: 95%;
+	}
+
+	.question-name,.resultBox,.choice-grid div img{
+		width: auto;
+	}
+
+}
+@media screen and (max-width: 500px){
+	.choice-grid div{
+		width: 49%;
+	}
+	.question-name,.resultBox,.choice-grid div img{
+		width: auto;
+	}
+}
